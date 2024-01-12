@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Employee } from '../employee';
 
 
@@ -6,7 +6,8 @@ import { Employee } from '../employee';
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  viewProviders:[Employee]
+  viewProviders:[Employee],
+  encapsulation: ViewEncapsulation.None
 })
 // export class Abc{
 //   constructor(){
